@@ -1,7 +1,8 @@
 import boxable_nugs
+import largest_subarray
 
 if __name__ == '__main__':
 
-    ui = boxable_nugs.Boxable_Nugs()
+    ui = largest_subarray.LargestSubArray()
 
     ui.run()
