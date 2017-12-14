@@ -2,7 +2,9 @@ class LargestSubArray:
 
     @staticmethod
     def get_length_of_longest_sub_array(l):
-
+        """
+        Given a list of integers, return the length of the longest sequence of ascending integers
+        """
         if len(l) < 1:
             return 0
 

@@ -1,7 +1,8 @@
 
-class Boxable_Nugs:
+class BoxableNugs:
 
-    def can_be_boxed(self,nugs):
+    @staticmethod
+    def can_be_boxed(self, nugs):
         """Given a number of Nugs, returns true if they will all fit in MickyD's box sizes with no remainers.
         Box sizes are 20, 9 and 6"""
         if nugs == 0:
@@ -21,11 +22,10 @@ class Boxable_Nugs:
 
         return False
 
-
     def run(self):
 
-        strNugs = input("How many nugs do you have\n")
+        str_nugs = input("How many nugs do you have\n")
 
-        boxable = self.can_be_boxed(int(strNugs))
+        boxable = self.can_be_boxed(int(str_nugs))
 
-        print("You have {} nugs, which {} be boxed".format(strNugs, 'can' if boxable else 'can NOT'))
+        print("You have {} nugs, which {} be boxed".format(str_nugs, 'can' if boxable else 'can NOT'))
